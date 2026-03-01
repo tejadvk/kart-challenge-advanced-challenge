@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.illustration {
+  margin-bottom: 1rem;
+}
+
+.illustration svg {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}

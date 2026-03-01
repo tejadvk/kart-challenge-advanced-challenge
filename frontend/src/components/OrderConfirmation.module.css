@@ -1,0 +1,153 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal {
+  background: var(--color-card);
+  border-radius: var(--radius) var(--radius) 0 0;
+  max-width: 420px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    border-radius: var(--radius);
+    max-height: 85vh;
+  }
+}
+
+.header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.checkmark {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem;
+  padding: 0.5rem;
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border: 2px solid var(--color-success);
+  border-radius: 50%;
+}
+
+.checkmark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.summary {
+  background: #f9f8f6;
+  border-radius: var(--radius);
+  margin: 0 1.5rem 1.5rem;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.itemInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.itemName {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+
+.itemMeta {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.qty {
+  color: var(--color-accent);
+}
+
+.itemTotal {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  flex-shrink: 0;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+  font-weight: 600;
+}
+
+.totalValue {
+  font-size: 1.125rem;
+}
+
+.startNewBtn {
+  width: calc(100% - 3rem);
+  margin: 0 1.5rem 2rem;
+  padding: 0.875rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  transition: background 0.2s ease;
+}
+
+.startNewBtn:hover,
+.startNewBtn:focus-visible {
+  background: var(--color-accent-hover);
+}
